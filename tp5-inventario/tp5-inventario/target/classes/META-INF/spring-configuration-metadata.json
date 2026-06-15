@@ -1,0 +1,29 @@
+{
+  "groups": [
+    {
+      "name": "inventario.stock",
+      "type": "com.inventory.smart.config.StockConfig",
+      "sourceType": "com.inventory.smart.config.StockConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "inventario.stock.critico",
+      "type": "java.lang.Integer",
+      "description": "umbral crítico; si {@code stock < critico}, alerta CRITICO",
+      "sourceType": "com.inventory.smart.config.StockConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "inventario.stock.minimo",
+      "type": "java.lang.Integer",
+      "description": "umbral mínimo; si {@code stock < minimo}, alerta BAJO",
+      "sourceType": "com.inventory.smart.config.StockConfig",
+      "defaultValue": 0
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}
